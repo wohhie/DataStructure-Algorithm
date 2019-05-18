@@ -1,6 +1,6 @@
 # DataStructure-Algorithm
 
-### Insertion Sort
+## Insertion Sort
 The Insertion Sort algorithm and have a look at its Java implementation.
 
 ##### Pseudocode
