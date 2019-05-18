@@ -5,6 +5,10 @@ public class Main {
 
         // Insertion Sort
         InsertionSort insertionSort = new InsertionSort();
-        insertionSort.execute();
+        //insertionSort.execute();
+
+
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.execute();
     }
 }
