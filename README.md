@@ -48,8 +48,3 @@ Time complexity of Merge Sort is \Theta(nLogn) in all 3 cases (worst, average an
 Auxiliary Space: O(n)
 
 Algorithmic Paradigm: Divide and Conquer
-
-
-> The time complexity of **INSERTION-SORT** is **O(n^2)**.  
-> The algorithm sorts in place so its **space complexity** is **O(1)** for the imperative implementation.
-> **O(n)** for the recursive implementation.
