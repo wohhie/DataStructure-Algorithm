@@ -19,3 +19,37 @@ for i=2 to A.length
 > The time complexity of **INSERTION-SORT** is **O(n^2)**.  
 > The algorithm sorts in place so its **space complexity** is **O(1)** for the imperative implementation.
 > **O(n)** for the recursive implementation.
+
+
+
+## Merge Sort
+The Merge Sort algorithm and have a look at its Java implementation.
+
+##### Pseudocode
+```pseudo
+MergeSort(arr[], l,  r)
+If r > l
+     1. Find the middle point to divide the array into two halves:  
+             middle m = (l+r)/2
+     2. Call mergeSort for first half:   
+             Call mergeSort(arr, l, m)
+     3. Call mergeSort for second half:
+             Call mergeSort(arr, m+1, r)
+     4. Merge the two halves sorted in step 2 and 3:
+             Call merge(arr, l, m, r)
+```
+
+
+Time Complexity: Sorting arrays on different machines. Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation.   
+**T(n) = 2T(n/2) + \Theta(n)**   
+The above recurrence can be solved either using Recurrence Tree method or Master method. 
+Time complexity of Merge Sort is \Theta(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array in two halves and take linear time to merge two halves.
+
+Auxiliary Space: O(n)
+
+Algorithmic Paradigm: Divide and Conquer
+
+
+> The time complexity of **INSERTION-SORT** is **O(n^2)**.  
+> The algorithm sorts in place so its **space complexity** is **O(1)** for the imperative implementation.
+> **O(n)** for the recursive implementation.
