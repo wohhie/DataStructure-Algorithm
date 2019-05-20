@@ -11,8 +11,10 @@ public class Main {
 
 
         MergeSort mergeSort = new MergeSort();
-        mergeSort.execute();
+        //mergeSort.execute();
 
+        QuickSort quickSort = new QuickSort();
+        quickSort.execute();
 
     }
 }
