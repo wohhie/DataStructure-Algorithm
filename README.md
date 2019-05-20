@@ -1,5 +1,8 @@
 # DataStructure-Algorithm
 
+![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
+
+
 ## Insertion Sort
 The Insertion Sort algorithm and have a look at its Java implementation.
 
@@ -46,5 +49,35 @@ The above recurrence can be solved either using Recurrence Tree method or Master
 Time complexity of Merge Sort is \Theta(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array in two halves and take linear time to merge two halves.
 
 Auxiliary Space: O(n)
+
+Algorithmic Paradigm: Divide and Conquer
+
+
+
+
+
+## Quick Sort
+The Quick Sort algorithm and have a look at its Java implementation.
+
+##### Pseudocode
+```pseudo
+/* low  --> Starting index,  high  --> Ending index */
+quickSort(arr[], low, high)
+{
+    if (low < high)
+    {
+        /* pi is partitioning index, arr[pi] is now
+           at right place */
+        pi = partition(arr, low, high);
+
+        quickSort(arr, low, pi - 1);  // Before pi
+        quickSort(arr, pi + 1, high); // After pi
+    }
+}
+```
+
+
+Time Complexity: The solution of above recurrence is **\theta(n2)**.   
+> The solution of above recurrence is \theta(nLogn).    It can be solved using case 2 of **Master Theorem**.   
 
 Algorithmic Paradigm: Divide and Conquer
