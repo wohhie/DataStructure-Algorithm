@@ -14,7 +14,13 @@ public class Main {
         //mergeSort.execute();
 
         QuickSort quickSort = new QuickSort();
-        quickSort.execute();
+        //quickSort.execute();
 
+        BinarySearch binarySearch = new BinarySearch();
+        //binarySearch.execute();
+
+
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.execute();
     }
 }

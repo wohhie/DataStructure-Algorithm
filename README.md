@@ -81,3 +81,36 @@ Time Complexity: The solution of above recurrence is **\theta(n2)**.
 > The solution of above recurrence is \theta(nLogn).    It can be solved using case 2 of **Master Theorem**.   
 
 Algorithmic Paradigm: Divide and Conquer
+
+
+
+
+
+
+
+
+## Bubble Sort
+The Quick Sort algorithm and have a look at its Java implementation.
+
+##### Pseudocode
+```pseudo
+/* low  --> Starting index,  high  --> Ending index */
+quickSort(arr[], low, high)
+{
+    if (low < high)
+    {
+        /* pi is partitioning index, arr[pi] is now
+           at right place */
+        pi = partition(arr, low, high);
+
+        quickSort(arr, low, pi - 1);  // Before pi
+        quickSort(arr, pi + 1, high); // After pi
+    }
+}
+```
+
+
+Time Complexity: The solution of above recurrence is **\theta(n2)**.   
+> The solution of above recurrence is \theta(nLogn).    It can be solved using case 2 of **Master Theorem**.   
+
+Algorithmic Paradigm: Divide and Conquer
