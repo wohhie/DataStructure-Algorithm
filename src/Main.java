@@ -16,11 +16,27 @@ public class Main {
         QuickSort quickSort = new QuickSort();
         //quickSort.execute();
 
-        BinarySearch binarySearch = new BinarySearch();
+        //BinarySearch binarySearch = new BinarySearch();
         //binarySearch.execute();
 
 
         BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.execute();
+        //bubbleSort.execute();
+
+
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.add(6);
+        binaryTree.add(4);
+        binaryTree.add(8);
+        binaryTree.add(3);
+        binaryTree.add(5);
+        binaryTree.add(7);
+        binaryTree.add(9);
+
+        int value = 0;
+        if(binaryTree.containsNode(value)){
+            System.out.println("Found");
+        }
+
     }
 }
