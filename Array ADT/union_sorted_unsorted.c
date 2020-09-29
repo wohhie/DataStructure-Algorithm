@@ -51,16 +51,44 @@ struct Array* UnionUnsorted(struct Array *arr1, struct Array *arr2){
     return arr3;
 }
 
+struct Array* unionSorted(struct Array *arr1, struct Array *arr2){
+    // 3, 4, 5, 6, 10 = i
+    // 2, 4, 5, 7, 12 = j, j++, i++
+    // k ++, k++, 
+    int i, j, k;
+    struct Array *arr3 = malloc(sizeof(struct Array)); 
+    i = j = k = 0;
+    while (i < arr1->length && j < arr2->length){
+        if(arr1->A[i] < arr2->A[j]){
+            arr3->A[k++] = arr1->A[i++];
+            
+        }else if(arr2->A[j] < arr1->A[i]){
+            arr3->A[k++] = arr2->A[j++];
+        }else{
+            arr3->A[k++] = arr1->A[i++];
+            j++;
+        }
+    }
+
+    for(; i < arr1->length; i++) arr3->A[k++] = arr1->A[i++];
+    for(; j < arr2->length; j++) arr3->A[k++] = arr2->A[j++];
+
+    arr3->length = k;
+    arr3->size = 10;
+
+    return arr3;
+}
+
+
 
 int main() {
-    struct Array arr1 = {{3, 5, 10, 4, 6}, 10, 5};
-    struct Array arr2 = {{12, 4, 7, 2, 5}, 10, 5};
+    struct Array arr1 = {{1, 2, 3, 6, 10}, 10, 5};
+    struct Array arr2 = {{2, 4, 5, 7, 12}, 10, 5};
     struct Array *result;
 
-    result = UnionArray(&arr1, &arr2);
-
+    // result = UnionArray(&arr1, &arr2);
+    result = unionSorted(&arr1, &arr2);
     Display(*result);
-
 
 
     return 0;
