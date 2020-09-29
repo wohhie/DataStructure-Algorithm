@@ -17,7 +17,8 @@ void Display(struct Array arr){
     printf("\n");
 }
 
-struct Array* UnionArray(struct Array *arr1, struct Array *arr2){
+
+struct Array* UnionUnsorted(struct Array *arr1, struct Array *arr2){
     int i, j;
     bool flag;
     int temp;
