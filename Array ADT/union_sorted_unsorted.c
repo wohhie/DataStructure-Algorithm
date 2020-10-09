@@ -46,6 +46,7 @@ struct Array* UnionArray(struct Array *arr1, struct Array *arr2){
             arr3->A[arr3->length++] = arr2->A[j];
         }
     }
+    
 
     arr3->size = 10;
     return arr3;
