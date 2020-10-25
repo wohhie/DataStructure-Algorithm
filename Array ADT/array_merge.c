@@ -26,6 +26,7 @@ struct Array* Merge(struct Array *arr1, struct Array *arr2){
     i = j = k = 0;
     struct Array *arr3 = (struct Array *) malloc(sizeof(struct Array));
 
+    
     while ( i < arr1->length && j < arr2->length){
         if(arr1->A[i] < arr2->A[j])
             arr3->A[k++] = arr1->A[i++];
@@ -40,6 +41,7 @@ struct Array* Merge(struct Array *arr1, struct Array *arr2){
     arr3->size = 10;
 
     return arr3;
+    
 }
 
 
