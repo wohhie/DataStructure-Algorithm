@@ -12,7 +12,14 @@ struct Array {
 // B = 2 4 6 8
 // Result = 1 2 3 4 5 6 7 8
 
+void Display(struct Array arr){
+    int i;
+    for(i = 0; i < arr.length; i++){
+        printf("%d ", arr.A[i]);
+    }
 
+    printf("\n");
+}
 
 struct Array* Merge(struct Array *arr1, struct Array *arr2){
     int i, j, k;
@@ -44,8 +51,8 @@ int main() {
     struct Array arr2 = {{4, 10, 12, 22, 23}, 10, 5};
     struct Array *arr3;
 
-    *arr3 = (struct Array *) malloc((arr1.length + arr2.length) * sizeof(struct Array));
-
+    arr3 = Merge(&arr1, &arr2);
+    Display(*arr3);
 
 
     return 0;
