@@ -101,7 +101,7 @@ int Linear_search_movetohead(struct Array *arr, int index){
 }
 
 
-/*          BINARY SEARCH:
+/*          BINARY SEARCH: LOOP
 =============================================================*/
 int binary_search(struct Array arr, int value){
     int low, high, mid;
@@ -125,6 +125,27 @@ int binary_search(struct Array arr, int value){
 }
 
 
+/*          BINARY SEARCH: RECURRSION
+=============================================================*/
+int RBinSearch(struct Array arr, int low, int high, int value){
+    int mid;
+
+    mid = (low + high) / 2;
+    if(value == arr.A[mid]){
+        return mid;
+
+    }else if(value < arr.A[mid]){
+        return RBinSearch(arr, low, mid - 1, value);
+    }else {
+        return RBinSearch(arr, mid + 1, high, value);
+    }
+
+    return -1;
+}
+
+
+
+
 
 int main() {
     struct Array arr = {{2, 3, 4, 5, 6, 9, 10, 11, 15}, 20, 9};
@@ -137,7 +158,9 @@ int main() {
     // Delete(&arr, 3);
     // Display(arr);
     // printf("%d ", Linear_search_transposition(&arr, 5));
-    printf("index: %d", binary_search(arr, 11));
+    // printf("index: %d", binary_search(arr, 11));
+    printf("index: %d", RBinSearch(arr, 0, arr.length - 1, 2));
+
 
     return 0;
 }
