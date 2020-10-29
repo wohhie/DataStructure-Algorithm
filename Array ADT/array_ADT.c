@@ -113,6 +113,7 @@ int binary_search(struct Array arr, int value){
 
         if(value == arr.A[mid]){
             return mid;
+
         }else if(value < arr.A[mid]){
             high = mid - 1;
         }else {
