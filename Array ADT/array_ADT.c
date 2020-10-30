@@ -7,7 +7,6 @@ struct Array {
     int length;
 };
 
-
 void Display(struct Array arr){
     int i;
     printf("Elements are:\n");
