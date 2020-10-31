@@ -101,11 +101,33 @@ int Linear_search_movetohead(struct Array *arr, int index){
 }
 
 
+/*          BINARY SEARCH:
+=============================================================*/
+int binary_search(struct Array arr, int value){
+    int low, high, mid;
+    low = 0;
+    high = arr.length - 1;
+
+    while (low <= high){
+        mid = (low + high) / 2;
+
+        if(value == arr.A[mid]){
+            return mid;
+        }else if(value < arr.A[mid]){
+            high = mid - 1;
+        }else {
+            low = mid + 1;
+        }
+    }
+
+    return -1;
+}
+
+
 
 int main() {
-    struct Array arr = {{2, 3, 4, 5, 6}, 20, 5};
+    struct Array arr = {{2, 3, 4, 5, 6, 9, 10, 11, 15}, 20, 9};
     int n, i;
-
 
 
     // Display the numbers
@@ -113,7 +135,9 @@ int main() {
     Display(arr);
     // Delete(&arr, 3);
     // Display(arr);
-    printf("%d ", Linear_search_transposition(&arr, 5));
+    // printf("%d ", Linear_search_transposition(&arr, 5));
+    printf("index: %d", binary_search(arr, 11));
+
     return 0;
 }
 
