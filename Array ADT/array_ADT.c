@@ -2,20 +2,55 @@
 #include <stdlib.h>
 
 struct Array {
-    int *A;
+    int A[20];
     int size;
     int length;
 };
 
 
-void Display(Struct Array arr){
+void Display(struct Array arr){
     int i;
     printf("Elements are:\n");
     for(i = 0; i < arr.length; i++)
-        printf("%d ", arr.A[i])
+        printf("%d ", arr.A[i]);
 }
 
 
+void Append(struct Array *arr, int x){
+    // check the sufficient space are available
+    if(arr->length < arr->size)
+        arr->A[arr->length++] = x;
+}
+
+void Insert(struct Array *arr, int index, int x){
+    int i;
+    if(index >=0 && index <= arr->length){
+        for(i = arr->length; i > index; i--)
+            arr->A[i] = arr->A[i - 1];
+
+        arr->A[index] = x;
+        arr->length++;
+    }
+}
+
+
+
+int main() {
+    struct Array arr = {{2, 3, 4, 5, 6}, 20, 5};
+    int n, i;
+
+
+
+    // Display the numbers
+    Insert(&arr, 3, 10);
+    Display(arr);
+    return 0;
+}
+
+
+
+
+/*
 int main() {
     struct Array arr;
     int n, i;
@@ -28,15 +63,25 @@ int main() {
 
 
     // getting the values
-    printf("Enter number of numbers");
+    printf("Enter number of numbers: ");
     scanf("%d", &n);
 
-    printf("Enter all elements:\n")
+    printf("Enter all elements:\n");
     for(i = 0; i < n; i++)
         scanf("%d", &arr.A[i]);
 
-
     arr.length = n;
+
+
+
+
+    // Display the numbers
+    Display(arr);
+
+
 
     return 0;
 }
+*/
+
+
