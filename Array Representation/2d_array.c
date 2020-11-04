@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int main() {
     int A[3][4] = {
         {1, 2, 3, 4},
