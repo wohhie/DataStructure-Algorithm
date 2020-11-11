@@ -2,14 +2,10 @@
 
 
 double horners_rule(int x, int n){
-    static int result = 1;
-    if(n == 0){
-        return 1;
-    }
+    return x/n;
 }
 
-
 int main() {
-
+    printf("%lf \n", horners_rule(50, 6));
     return 0;
 }
