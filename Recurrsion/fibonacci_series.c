@@ -13,7 +13,6 @@ int fibonacci(int n){
 
 }
 
-
 int main() {
     printf("Fibonacci Series: \n");
     printf("%d \n", fibonacci(6));
