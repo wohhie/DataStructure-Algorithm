@@ -5,6 +5,7 @@
 int main() {
     int i;
 
+
     // static array
     int A[10] = {2, 4, 6, 8, 10};
     int *p;
