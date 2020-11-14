@@ -23,6 +23,7 @@ int main() {
         printf("%d ", A[i]);
     }
 
+
     printf("\n");
 
     for(i = 0; i < 5; i++){
