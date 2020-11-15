@@ -13,6 +13,8 @@ void Display(struct Array arr){
     printf("Elements are:\n");
     for(i = 0; i < arr.length; i++)
         printf("%d ", arr.A[i]);
+
+    printf("\n");
 }
 
 
@@ -34,6 +36,19 @@ void Insert(struct Array *arr, int index, int x){
 }
 
 
+int Delete(struct Array *arr, int index){
+    int x = 0;
+    int i;
+
+    x = arr->A[index];
+    for(i = index; i < arr->length; i++)
+        arr->A[i] = arr->A[i+1];
+
+    arr->length--;
+    return x;
+}
+
+
 
 int main() {
     struct Array arr = {{2, 3, 4, 5, 6}, 20, 5};
@@ -42,7 +57,9 @@ int main() {
 
 
     // Display the numbers
-    Insert(&arr, 3, 10);
+    //Insert(&arr, 3, 10);
+    Display(arr);
+    Delete(&arr, 3);
     Display(arr);
     return 0;
 }
