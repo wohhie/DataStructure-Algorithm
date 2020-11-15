@@ -39,13 +39,27 @@ void Insert(struct Array *arr, int index, int x){
 int Delete(struct Array *arr, int index){
     int x = 0;
     int i;
+    if (index >= 0 && index <= arr->length){
+        x = arr->A[index];
+        for(i = index; i < arr->length; i++)
+            arr->A[i] = arr->A[i+1];
 
-    x = arr->A[index];
-    for(i = index; i < arr->length; i++)
-        arr->A[i] = arr->A[i+1];
+        arr->length--;
+        return x;
+    }
+}
 
-    arr->length--;
-    return x;
+
+int Linear_search(struct Array *arr, int index){
+    int i;
+
+    for(i = 0; i < arr->length; i++){
+        if(index == arr->A[i]){
+            return index;
+        }
+    }
+
+    return -1;
 }
 
 
@@ -57,10 +71,11 @@ int main() {
 
 
     // Display the numbers
-    //Insert(&arr, 3, 10);
+    // Insert(&arr, 3, 10);
     Display(arr);
-    Delete(&arr, 3);
-    Display(arr);
+    // Delete(&arr, 3);
+    // Display(arr);
+    printf("%d ", Linear_search(&arr, 11));
     return 0;
 }
 
