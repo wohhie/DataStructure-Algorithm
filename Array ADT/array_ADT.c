@@ -88,6 +88,17 @@ int Linear_search_transposition(struct Array *arr, int index){
 
 /*          UPDATED LINEAR SEACRH: MOVE TO HEAD
 =============================================================*/
+int Linear_search_movetohead(struct Array *arr, int index){
+    int i;
+
+    for(i = 0; i < arr->length; i++){
+        if(index == arr->A[i]){
+            Swap(&arr->A[i], &arr->A[0]);
+            return i;
+        }
+    }
+    return -1;
+}
 
 
 
