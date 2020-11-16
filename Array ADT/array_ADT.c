@@ -49,7 +49,8 @@ int Delete(struct Array *arr, int index){
     }
 }
 
-
+/*                  LINEAR SEACRH
+=============================================================*/
 int Linear_search(struct Array *arr, int index){
     int i;
 
@@ -58,9 +59,35 @@ int Linear_search(struct Array *arr, int index){
             return index;
         }
     }
-
     return -1;
 }
+
+
+void Swap(int *x, int *y){
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+
+/*          UPDATED LINEAR SEACRH: TRANSPOSITION
+=============================================================*/
+int Linear_search_transposition(struct Array *arr, int index){
+    int i;
+
+    for(i = 0; i < arr->length; i++){
+        if(index == arr->A[i]){
+            Swap(&arr->A[i], &arr->A[i - 1]);
+            return i;
+        }
+    }
+    return -1;
+}
+
+
+/*          UPDATED LINEAR SEACRH: MOVE TO HEAD
+=============================================================*/
 
 
 
@@ -75,7 +102,7 @@ int main() {
     Display(arr);
     // Delete(&arr, 3);
     // Display(arr);
-    printf("%d ", Linear_search(&arr, 11));
+    printf("%d ", Linear_search_transposition(&arr, 5));
     return 0;
 }
 
