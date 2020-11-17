@@ -156,6 +156,35 @@ int Set(struct Array *arr, int index, int value){
     arr->A[index] = value;
 }
 
+/*          MAX() 
+=============================================================*/
+int Max(struct Array arr){
+    int max = arr.A[0];
+    int i;
+    for (i = 0; i < arr.length - 1; i++){
+        if(max < arr.A[i]){
+            max = arr.A[i];
+        }    
+    }
+
+    return max;    
+}
+
+
+/*          MAX() 
+=============================================================*/
+int Max(struct Array arr){
+    int max = arr.A[0];
+    int i;
+    for (i = 0; i < arr.length - 1; i++){
+        if(max < arr.A[i]){
+            max = arr.A[i];
+        }    
+    }
+
+    return max;    
+}
+
 
 
 int main() {
@@ -174,6 +203,7 @@ int main() {
     // printf("%d", Get(arr, 3));
     // printf("%d", Set(&arr, 3, 15));
     // printf("%d", Get(arr, 3));
+    printf("%d", Max(arr));
 
     return 0;
 }
