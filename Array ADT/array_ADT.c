@@ -171,18 +171,18 @@ int Max(struct Array arr){
 }
 
 
-/*          MAX() 
+/*          MIN() 
 =============================================================*/
-int Max(struct Array arr){
-    int max = arr.A[0];
+int Min(struct Array arr){
+    int min = arr.A[0];
     int i;
     for (i = 0; i < arr.length - 1; i++){
-        if(max < arr.A[i]){
-            max = arr.A[i];
+        if(min > arr.A[i]){
+            min = arr.A[i];
         }    
     }
 
-    return max;    
+    return min;    
 }
 
 
