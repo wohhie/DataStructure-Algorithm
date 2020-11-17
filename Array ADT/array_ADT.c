@@ -161,7 +161,7 @@ int Set(struct Array *arr, int index, int value){
 int Max(struct Array arr){
     int max = arr.A[0];
     int i;
-    for (i = 0; i < arr.length - 1; i++){
+    for (i = 0; i < arr.length; i++){
         if(max < arr.A[i]){
             max = arr.A[i];
         }    
@@ -176,7 +176,7 @@ int Max(struct Array arr){
 int Min(struct Array arr){
     int min = arr.A[0];
     int i;
-    for (i = 0; i < arr.length - 1; i++){
+    for (i = 0; i < arr.length; i++){
         if(min > arr.A[i]){
             min = arr.A[i];
         }    
@@ -186,9 +186,22 @@ int Min(struct Array arr){
 }
 
 
+/*          SUM() 
+=============================================================*/
+int Sum(struct Array arr){
+    int sum = 0;
+    int i;
+
+    for(i = 0; i < arr.length; i++){
+        sum += arr.A[i];
+    }
+
+    return sum;
+}
+
 
 int main() {
-    struct Array arr = {{12, 3, 44, 15, 6}, 20, 5};
+    struct Array arr = {{12, 3, 44, 15, 6, 55}, 20, 6};
     int n, i;
 
 
@@ -203,7 +216,8 @@ int main() {
     // printf("%d", Get(arr, 3));
     // printf("%d", Set(&arr, 3, 15));
     // printf("%d", Get(arr, 3));
-    printf("%d", Max(arr));
+    // printf("%d", Max(arr));
+    printf("%d", Sum(arr));
 
     return 0;
 }
