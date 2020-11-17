@@ -212,10 +212,19 @@ int Sum_Recurrsion(struct Array arr, int n){
 }
 
 
+
+/*          Average(): 
+=============================================================*/
+float Average(struct Array arr){
+    return (float) (Sum_Recurrsion(arr, arr.length - 1) + arr.A[arr.length]) / arr.length;
+}
+
+
+
+
 int main() {
     struct Array arr = {{12, 3, 44, 15, 6, 55}, 20, 6};
     int n, i;
-
 
     // Display the numbers
     // Insert(&arr, 3, 10);
@@ -229,7 +238,8 @@ int main() {
     // printf("%d", Set(&arr, 3, 15));
     // printf("%d", Get(arr, 3));
     // printf("%d", Max(arr));
-    printf("%d", Sum_Recurrsion(arr, arr.length));
+    // printf("%d", Sum_Recurrsion(arr, arr.length));
+    printf("%f", Average(arr));
 
     return 0;
 }
