@@ -200,6 +200,18 @@ int Sum(struct Array arr){
 }
 
 
+/*          SUM(): Recurrsion 
+=============================================================*/
+int Sum_Recurrsion(struct Array arr, int n){
+    int sum = 0;
+    int i;
+    if ( n < 0) return 0;
+    else 
+        return Sum_Recurrsion(arr, n - 1) + arr.A[n];
+
+}
+
+
 int main() {
     struct Array arr = {{12, 3, 44, 15, 6, 55}, 20, 6};
     int n, i;
@@ -217,7 +229,7 @@ int main() {
     // printf("%d", Set(&arr, 3, 15));
     // printf("%d", Get(arr, 3));
     // printf("%d", Max(arr));
-    printf("%d", Sum(arr));
+    printf("%d", Sum_Recurrsion(arr, arr.length));
 
     return 0;
 }
