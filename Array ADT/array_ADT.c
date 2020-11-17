@@ -144,11 +144,22 @@ int RBinSearch(struct Array arr, int low, int high, int value){
 }
 
 
+/*          GET(index) 
+=============================================================*/
+int Get(struct Array arr, int index){
+    return arr.A[index];
+}
+
+/*          SET(index, value) 
+=============================================================*/
+int Set(struct Array *arr, int index, int value){
+    arr->A[index] = value;
+}
 
 
 
 int main() {
-    struct Array arr = {{2, 3, 4, 5, 6, 9, 10, 11, 15}, 20, 9};
+    struct Array arr = {{12, 3, 44, 15, 6}, 20, 5};
     int n, i;
 
 
@@ -159,8 +170,10 @@ int main() {
     // Display(arr);
     // printf("%d ", Linear_search_transposition(&arr, 5));
     // printf("index: %d", binary_search(arr, 11));
-    printf("index: %d", RBinSearch(arr, 0, arr.length - 1, 2));
-
+    // printf("index: %d", RBinSearch(arr, 0, arr.length - 1, 2));
+    // printf("%d", Get(arr, 3));
+    // printf("%d", Set(&arr, 3, 15));
+    // printf("%d", Get(arr, 3));
 
     return 0;
 }
