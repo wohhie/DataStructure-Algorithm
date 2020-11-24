@@ -81,6 +81,7 @@ struct Array* unionSorted(struct Array *arr1, struct Array *arr2){
 
 
 
+
 int main() {
     struct Array arr1 = {{1, 2, 3, 6, 10}, 10, 5};
     struct Array arr2 = {{2, 4, 5, 7, 12}, 10, 5};
