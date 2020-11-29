@@ -144,19 +144,19 @@ int RBinSearch(struct Array arr, int low, int high, int value){
 }
 
 
-/*          GET(index) 
+/*          GET(index)
 =============================================================*/
 int Get(struct Array arr, int index){
     return arr.A[index];
 }
 
-/*          SET(index, value) 
+/*          SET(index, value)
 =============================================================*/
 int Set(struct Array *arr, int index, int value){
     arr->A[index] = value;
 }
 
-/*          MAX() 
+/*          MAX()
 =============================================================*/
 int Max(struct Array arr){
     int max = arr.A[0];
@@ -164,14 +164,14 @@ int Max(struct Array arr){
     for (i = 0; i < arr.length; i++){
         if(max < arr.A[i]){
             max = arr.A[i];
-        }    
+        }
     }
 
-    return max;    
+    return max;
 }
 
 
-/*          MIN() 
+/*          MIN()
 =============================================================*/
 int Min(struct Array arr){
     int min = arr.A[0];
@@ -179,14 +179,14 @@ int Min(struct Array arr){
     for (i = 0; i < arr.length; i++){
         if(min > arr.A[i]){
             min = arr.A[i];
-        }    
+        }
     }
 
-    return min;    
+    return min;
 }
 
 
-/*          SUM() 
+/*          SUM()
 =============================================================*/
 int Sum(struct Array arr){
     int sum = 0;
@@ -200,31 +200,31 @@ int Sum(struct Array arr){
 }
 
 
-/*          SUM(): Recurrsion 
+/*          SUM(): Recurrsion
 =============================================================*/
 int Sum_Recurrsion(struct Array arr, int n){
     int sum = 0;
     int i;
     if ( n < 0) return 0;
-    else 
+    else
         return Sum_Recurrsion(arr, n - 1) + arr.A[n];
 
 }
 
 
 
-/*          Average(): 
+/*          Average():
 =============================================================*/
 float Average(struct Array arr){
     return (float) (Sum_Recurrsion(arr, arr.length - 1) + arr.A[arr.length]) / arr.length;
 }
 
 
-/*          Reverse(): 
+/*          Reverse():
 =============================================================*/
 void Reverse(struct Array *arr){
     int *B;
-    int i, j; 
+    int i, j;
     B = (int *) malloc(arr->length * sizeof(int));
 
     for(i = arr->length - 1, j = 0; i >= 0; i--, j++){
@@ -238,10 +238,10 @@ void Reverse(struct Array *arr){
 }
 
 
-/*          Reverse2(): 
+/*          Reverse2():
 =============================================================*/
 void Reverse2(struct Array *arr){
-    int i, j; 
+    int i, j;
 
     for(i = 0, j = arr->length - 1; i < j ; i++, j--){
         Swap(&arr->A[i], &arr->A[j]);
@@ -257,6 +257,35 @@ void Reverse2(struct Array *arr){
 
 
 int main() {
+    sturct Array arr1;
+    int ch;
+
+
+    printf("Enter Size of Array");
+    scanf("%d", &arr1.size);
+    arr1.A = (int *) malloc(arr1.size * sizeof(int));
+
+    printf("Menu\n");
+    printf("1. Insert\n");
+    printf("2. Delete\n");
+    printf("3. Search\n");
+    printf("4. Sum\n");
+    printf("5. Display\n");
+    printf("6. Exit\n");
+
+
+    printf("enter your choice: ");
+    scanf("%d", &ch);
+
+    switch(ch){
+        case 1:
+        printf("Enter an element and index ");
+        scanf("%d%d", &x, &index);
+        Insert(&arr, index, x);
+        break;
+
+    }
+
     struct Array arr = {{12, 3, 44, 15, 6, 55}, 20, 6};
     int n, i;
 
