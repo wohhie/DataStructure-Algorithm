@@ -13,4 +13,15 @@ func main() {
 	fmt.Println(a ^ b)  // 1001
 	fmt.Println(a &^ b) // 0100
 
+	fmt.Println("	Bit Shifting	")
+	fmt.Println("==============================")
+	c := 8              // 2^3
+	fmt.Println(c << 3) // 2^3 * 2^3 = 2^6
+	fmt.Println(c >> 3) // 2^3 / 2^3 = 2^0
+
+	fmt.Println("	Complex Number	")
+	fmt.Println("==============================")
+	var n complex64 = 1 + 2i
+	fmt.Printf("%v, %T\n", n, n)
+
 }
