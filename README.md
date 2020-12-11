@@ -58,6 +58,25 @@ findPairsOfSum(A, n, k)
 ```
 ###`Analysis: Time-Complexity`: O(n)
 
+
+
+## Finding minimum and maximum in an array
+#### Pseudocode: 2nd Solution: Using Hash Array
+```pseudo
+findMinMax(A, n)
+    min = A[0]
+    max = A[0]
+    for(i = 0; i < n; i++){
+        if( min < A[i]{
+            min = A[i]
+        else if(max > A[i])
+            max = A[i]
+    }
+    
+    print("min: %d and max: %d", min, max)
+```
+###`Analysis: Time-Complexity`: O(n)
+
 ![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
 
 
