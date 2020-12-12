@@ -9,9 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="427ce7ae-f51e-4db0-9ac2-af9b08c9698c" name="Default Changelist" comment="update README.md file">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="427ce7ae-f51e-4db0-9ac2-af9b08c9698c" name="Default Changelist" comment="update README.md file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608138687905</updated>
-      <workItem from="1608138690669" duration="2679000" />
+      <workItem from="1608138690669" duration="2772000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md file">
       <created>1608138933540</created>
