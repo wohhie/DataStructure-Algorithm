@@ -18,8 +18,24 @@ void findDuplicates(int A[], int n){
     }
 }
 
+void findDuplicate2ndSolution(int A[], int l, int h, int n){
+    int H[h] = {0};
+    int i, j; 
+    for(i = 0; i < n; i++)
+        H[A[i]]++;
+
+    for(i = l; i < h; i++){
+        if(H[i] > 1)
+            printf("%d appers %d times\n", i, H[i]);
+    }
+
+}
+
 int main() {
     int A[10] = {3, 6, 8, 8, 10, 12, 15, 15, 15, 20};
-    findDuplicates(A, 9);
+    // findDuplicates(A, 9);
+
+
+    findDuplicate2ndSolution(A, 3, 20, 9);
     return 0;
 }
