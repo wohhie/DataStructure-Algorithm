@@ -2,7 +2,7 @@
 
 ## Data Structure:
 
-### Finding a pair of element with sum K in a Unsorted array: 
+## Finding a pair of element with sum K in a Unsorted array: 
 Given an absolute unsorted array arr[] and a number K, the task is to find a pair of elements in the given array that sum to K.
 | 6 | 3 | 8 | 10 | 16 | 7 | 5 | 2 | 9 | 14 |
 |---|---|---|----|----|---|---|---|---|----|
@@ -33,7 +33,7 @@ findPairsOfSum(A, n, max, k)
 ###`Analysis: Time-Complexity`: O(n)
 
 
-### Finding a pair of element with sum K in a SORTED array
+## Finding a pair of element with sum K in a SORTED array
 Given an absolute sorted array arr[] and a number K, the task is to find a pair of elements in the given array that sum to K.
 | 1 | 3 | 4 | 5 | 6 | 8 | 9 | 10 | 12 | 14 |
 |---|---|---|---|---|---|---|----|----|----|
