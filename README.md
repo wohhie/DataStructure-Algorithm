@@ -2,7 +2,7 @@
 
 ## Data Structure:
 
-## Finding a pair of element with sum K in a Unsorted array: 
+## Finding a pair of element with sum K in a UNSORTED array: 
 Given an absolute unsorted array arr[] and a number K, the task is to find a pair of elements in the given array that sum to K.
 | 6 | 3 | 8 | 10 | 16 | 7 | 5 | 2 | 9 | 14 |
 |---|---|---|----|----|---|---|---|---|----|
