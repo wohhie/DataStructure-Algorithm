@@ -1,4 +1,5 @@
 #include <stdio.h> 
+#include <stdlib.h>
 
 
 // 3, 8, 8, 1, 2, 12, 12, 12, 15, 4
@@ -23,7 +24,6 @@ void findDuplicate_Unsorted(int A[], int n){
             }
         }
 
-
         if(count > 1){
             printf("%d appears %d times\n", A[i], count);
         }
@@ -33,8 +33,23 @@ void findDuplicate_Unsorted(int A[], int n){
 }
 
 
+void findDuplicates_2ndSolution(int A[], int l, int h, int n){
+    int i;
+    int H[15] = {0};
+    for(i = 0; i < n; i++){
+        H[A[i]]++;
+    }
+
+    for(i = l; i < h; i++){
+        if(H[i] > 1)
+            printf("%d appears %d times\n", i, H[i]);
+    }
+}
+
+
 int main() {
     int A[10] = {3, 8, 8, 1, 2, 12, 12, 12, 15, 4};
-    findDuplicate_Unsorted(A, 10);
+    // findDuplicate_Unsorted(A, 10);
+    findDuplicates_2ndSolution(A, 1, 15, 10);
     return 0;
 }
