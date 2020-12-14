@@ -45,7 +45,7 @@ Given an absolute sorted array arr[] and a number K, the task is to find a pair 
 findPairsOfSum(A, n, k)
     i = 0; j = n - 1
     while(i < j){
-        if(A[i] + A[j] == k){   // 1 + 9 = 10
+        if(A[i] + A[j] == k){ 
             print("%d + %d = %d", A[i], A[j], k)
             i++
             j--
