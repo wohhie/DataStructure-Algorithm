@@ -38,9 +38,25 @@ Given an absolute sorted array arr[] and a number K, the task is to find a pair 
 | 1 | 3 | 4 | 5 | 6 | 8 | 9 | 10 | 12 | 14 |
 |---|---|---|---|---|---|---|----|----|----|
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8  |  9 |
+| i |   |   |   |   |   |   |    |    |  j |
 
-#### Pseudocode: 1st Solution
-
+#### Pseudocode: Solution
+```pseudo
+findPairsOfSum(A, n, k)
+    i = 0; j = n - 1
+    while(i < j){
+        if(A[i] + A[j] == k){   // 1 + 9 = 10
+            print("%d + %d = %d", A[i], A[j], k)
+            i++
+            j--
+        }
+        else if(A[i] + A[j] < k)
+            i++
+        else
+            j--
+    }
+```
+###`Analysis: Time-Complexity`: O(n)
 
 ![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
 
