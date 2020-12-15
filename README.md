@@ -34,7 +34,12 @@ findPairsOfSum(A, n, max, k)
 
 
 ### Finding a pair of element with sum K in a SORTED array
+Given an absolute sorted array arr[] and a number K, the task is to find a pair of elements in the given array that sum to K.
+| 1 | 3 | 4 | 5 | 6 | 8 | 9 | 10 | 12 | 14 |
+|---|---|---|---|---|---|---|----|----|----|
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8  |  9 |
 
+#### Pseudocode: 1st Solution
 
 
 ![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
