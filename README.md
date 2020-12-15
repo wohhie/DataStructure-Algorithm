@@ -33,6 +33,10 @@ findPairsOfSum(A, n, max, k)
 ###`Analysis: Time-Complexity`: O(n)
 
 
+### Finding a pair of element with sum K in a SORTED array
+
+
+
 ![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
 
 
