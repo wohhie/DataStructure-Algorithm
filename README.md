@@ -18,7 +18,8 @@ findPairsOfSum(A, n, k)
 ```
 
 
-#### Pseudocode: 2nd Solution: Using Hash
+#### Pseudocode: 2nd Solution: Using Hash Array
+==================================================
 ```pseudo
 findPairsOfSum(A, n, max, k)
     H[max] = {0}; // creating a hash array with the size of maximum number in A
