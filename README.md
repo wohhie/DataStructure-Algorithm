@@ -1,5 +1,17 @@
 # DataStructure-Algorithm
 
+# Data Structure:
+
+#### Finding a pair of element with sum K in a Unsorted array: 
+Given an absolute unsorted array arr[] and a number K, the task is to find a pair of elements in the given array that sum to K.
+| 6 | 3 | 8 | 10 | 16 | 7 | 5 | 2 | 9 | 14 |
+|---|---|---|----|----|---|---|---|---|----|
+| 0 | 1 | 2 | 3  | 4  | 5 | 6 | 7 | 8 |  9 |
+
+
+
+
+
 ![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
 
 
