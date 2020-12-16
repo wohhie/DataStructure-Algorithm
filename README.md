@@ -17,10 +17,11 @@ findPairsOfSum(A, n, k)
                 print("%d + %d = %d", A[i], A[j], k)
 ```
 
+<p style='color:green'>Analysis</p>
 
 #### Pseudocode: 2nd Solution: Using Hash Array
-==================================================
 ```pseudo
+
 findPairsOfSum(A, n, max, k)
     H[max] = {0}; // creating a hash array with the size of maximum number in A
     for(i = 0; i < n; i++)
