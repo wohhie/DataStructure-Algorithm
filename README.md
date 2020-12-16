@@ -16,21 +16,21 @@ findPairsOfSum(A, n, k)
             if(A[i] + A[j] == k)
                 print("%d + %d = %d", A[i], A[j], k)
 ```
+###`Analysis: Time-Complexity` : O(n<sup>2</sup>)
+n - 1 + n - 2 + n - 3 + . . . . + 3 + 2 + 1 </br>
+n(n - 1) / 2 </br>
+O(n^2)  </br>
 
-```diff
-+ this text is highlighted in green
-- this text is highlighted in red
-```
 
 #### Pseudocode: 2nd Solution: Using Hash Array
 ```pseudo
-
 findPairsOfSum(A, n, max, k)
     H[max] = {0}; // creating a hash array with the size of maximum number in A
     for(i = 0; i < n; i++)
         if(H[k - A[i]] != 0 && k - A[i] > 0)
             print("%d +  %d = %d", A[i], k - A[i], k)        
 ```
+###`Analysis: Time-Complexity`: O(n)
 
 
 ![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
@@ -52,7 +52,7 @@ for i=2 to A.length
 ```
 
 
-> The time complexity of **INSERTION-SORT** is **O(n^2)**.  
+> The time complexity of **INSERTION-SORT** is **O(n<sup>2</sup>)**.  
 > The algorithm sorts in place so its **space complexity** is **O(1)** for the imperative implementation.
 > **O(n)** for the recursive implementation.
 
