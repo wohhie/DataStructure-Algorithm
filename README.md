@@ -17,7 +17,10 @@ findPairsOfSum(A, n, k)
                 print("%d + %d = %d", A[i], A[j], k)
 ```
 
-<p style='color:green'>Analysis</p>
+```diff
++ this text is highlighted in green
+- this text is highlighted in red
+```
 
 #### Pseudocode: 2nd Solution: Using Hash Array
 ```pseudo
