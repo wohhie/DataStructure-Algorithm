@@ -13,7 +13,8 @@ Given an absolute unsorted array arr[] and a number K, the task is to find a pai
 findPairsOfSum(A, n, k)
     for(i = 0; i < n - 1; i++)
         for(j = i + 1; j < n; j++)
-            if(A[i])
+            if(A[i] + A[j] == k)
+                print("%d + %d = %d", A[i], A[j], k)
 ```
 
 
