@@ -8,6 +8,13 @@ Given an absolute unsorted array arr[] and a number K, the task is to find a pai
 |---|---|---|----|----|---|---|---|---|----|
 | 0 | 1 | 2 | 3  | 4  | 5 | 6 | 7 | 8 |  9 |
 
+#### Pseudocode: 1st Solution
+```pseudo
+findPairsOfSum(A, n, k)
+    for(i = 0; i < n - 1; i++)
+        for(j = i + 1; j < n; j++)
+            if(A[i])
+```
 
 
 ![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
