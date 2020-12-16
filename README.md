@@ -20,11 +20,11 @@ findPairsOfSum(A, n, k)
 
 #### Pseudocode: 2nd Solution: Using Hash
 ```pseudo
-findPairsOfSum(A, n, k)
-    for(i = 0; i < n - 1; i++)
-        for(j = i + 1; j < n; j++)
-            if(A[i] + A[j] == k)
-                print("%d + %d = %d", A[i], A[j], k)
+findPairsOfSum(A, n, max, k)
+    H[max] = {0}; // creating a hash array with the size of maximum number in A
+    for(i = 0; i < n; i++)
+        if(H[k - A[i]] != 0 && k - A[i] > 0)
+            print("%d +  %d = %d", A[i], k - A[i], k)        
 ```
 
 
