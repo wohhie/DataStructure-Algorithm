@@ -18,6 +18,16 @@ findPairsOfSum(A, n, k)
 ```
 
 
+#### Pseudocode: 2nd Solution: Using Hash
+```pseudo
+findPairsOfSum(A, n, k)
+    for(i = 0; i < n - 1; i++)
+        for(j = i + 1; j < n; j++)
+            if(A[i] + A[j] == k)
+                print("%d + %d = %d", A[i], A[j], k)
+```
+
+
 ![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
 
 
