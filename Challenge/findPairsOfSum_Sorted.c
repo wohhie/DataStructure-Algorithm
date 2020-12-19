@@ -1,6 +1,4 @@
-//
-// Created by Wohhie on 12/16/2020.
-//
+
 #include <stdio.h>
 
 void findPairOfSum_Sorted(int A[], int n, int k){

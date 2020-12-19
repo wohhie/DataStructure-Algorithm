@@ -21,7 +21,7 @@ void findMultipleMissingElement(int A[], int n){
 // ===================================================
 void nultipleMissingElement(int A[], int l, int h, int n){
     int i;
-    int H[h] = {0};
+    int H[11] = {0};
     for(i = 0; i < n; i++){
         H[A[i]]++;
     }

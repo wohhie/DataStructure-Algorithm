@@ -75,9 +75,26 @@ findMinMax(A, n)
     
     print("min: %d and max: %d", min, max)
 ```
+#### Pseudocode: solution
+```pseudo
+main() {
+    char *s = "welcome"
+    for(i = 0; s[i] != '0'; i++){}
+    printf("Length: %d", i);
+}
+```
 ###`Analysis: Time-Complexity`: O(n)
 
 ![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
+
+
+
+# Strings
+# Length of a string: Example s = "Welcome"
+As you know, the best way to find the length of a string is by using the strlen() function. However, in this example, we will find the length of a string manually.
+| W | E | L | C | O | M | E | \0 | 
+|---|---|---|---|---|---|---|----|
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 
 
 
 ## Insertion Sort

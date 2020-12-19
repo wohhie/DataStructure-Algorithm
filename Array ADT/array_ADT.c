@@ -225,7 +225,7 @@ float Average(struct Array arr){
 void Reverse(struct Array *arr){
     int *B;
     int i, j;
-    B = (int *) malloc(arr->length * sizeof(int));
+    B = (int *) malloc(arr->length * sizeof(int)); 
 
     for(i = arr->length - 1, j = 0; i >= 0; i--, j++){
         B[j] = arr->A[i];
@@ -251,14 +251,10 @@ void Reverse2(struct Array *arr){
 
 
 
-
-
-
-
-
 int main() {
-    sturct Array arr1;
+    struct Array arr1;
     int ch;
+    int x;
 
 
     printf("Enter Size of Array");
