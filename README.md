@@ -75,6 +75,14 @@ findMinMax(A, n)
     
     print("min: %d and max: %d", min, max)
 ```
+
+# Strings
+# Length of a string: Example s = "Welcome"
+As we know, the best way to find the length of a string is by using the strlen() function. However, in this example, we will find the length of a string manually.
+| W | E | L | C | O | M | E | \0 | 
+|---|---|---|---|---|---|---|----|
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 
+
 #### Pseudocode: solution
 ```pseudo
 main() {
@@ -85,20 +93,33 @@ main() {
 ```
 ###`Analysis: Time-Complexity`: O(n)
 
-![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
 
+# Change string from upercase to lower / lower to upper case
+As we know, the best way to find the length of a string is by using the strlen() function. However, in this example, we will find the length of a string manually.
 
+#### Pseudocode: solution
+```pseudo
+main() {
+    char A[] = "wElComE"
+    for(i = 0; A[i] '\0'; i++){
+        if(A[i] >= 65 && A[i] <= 90){
+            A[i] += 32;
+        }else if(A[i] >= 97 && A[i] <= 122){
+            A[i] -= 32;
+        }
+    }
 
-# Strings
-# Length of a string: Example s = "Welcome"
-As you know, the best way to find the length of a string is by using the strlen() function. However, in this example, we will find the length of a string manually.
-| W | E | L | C | O | M | E | \0 | 
-|---|---|---|---|---|---|---|----|
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 
+    print("%s", A);
+}
+```
+###`Analysis: Time-Complexity`: O(n)
 
 
 ## Insertion Sort
 The Insertion Sort algorithm and have a look at its Java implementation.
+
+
+![Algorithm](https://user-images.githubusercontent.com/13005159/58052772-4ce16f80-7b30-11e9-8d08-02eb91c682b4.png)
 
 ##### Pseudocode
 ```pseudo
