@@ -15,10 +15,10 @@ void changing_upper_to_lower(char A[]){
 void any_upercase_to_lowercase(char A[]){
     int i;
     for(i = 0; i < A[i]; i++){
-        if(A[i] >= 65 && A[i] << 91){
+        if(A[i] >= 65 && A[i] <= 90){
             A[i] += 32;
-        }else if(A[i] >= 'a' && A[i] <= 'z'){
-            A[i] -=32;
+        }else if(A[i] >= 97 && A[i] <= 122){
+            A[i] -= 32;
         }
     }
 
@@ -29,5 +29,6 @@ void any_upercase_to_lowercase(char A[]){
 int main() {
     char A[] = "WeLComE";
     // changing_upper_to_lower(A);
+    changing_upper_to_lower(A);
     return 0;
 } 
