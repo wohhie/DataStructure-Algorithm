@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="427ce7ae-f51e-4db0-9ac2-af9b08c9698c" name="Default Changelist" comment="update README.md file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +42,6 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="true" PASS_PARENT_ENVS_2="true" RUN_PATH="C:/MinGW/bin/mingw32-gcc.exe" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2" />
     </configuration>
@@ -75,6 +71,7 @@
       <workItem from="1608392222442" duration="838000" />
       <workItem from="1608430631478" duration="180000" />
       <workItem from="1608430831592" duration="204000" />
+      <workItem from="1608478343005" duration="1518000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md file">
       <created>1608138933540</created>

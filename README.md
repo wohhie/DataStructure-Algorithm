@@ -77,7 +77,7 @@ findMinMax(A, n)
 ```
 
 # Strings
-# Length of a string: Example s = "Welcome"
+## Problem 1: Length of a string: Example s = "Welcome"
 As we know, the best way to find the length of a string is by using the strlen() function. However, in this example, we will find the length of a string manually.
 | W | E | L | C | O | M | E | \0 | 
 |---|---|---|---|---|---|---|----|
@@ -94,7 +94,7 @@ main() {
 ###`Analysis: Time-Complexity`: O(n)
 
 
-# Change string from upercase to lower / lower to upper case
+## Problem 2: Change string from uppercase to lower / lower to upper case
 As we know, the best way to find the length of a string is by using the strlen() function. However, in this example, we will find the length of a string manually.
 
 #### Pseudocode: solution
@@ -113,6 +113,50 @@ main() {
 }
 ```
 ###`Analysis: Time-Complexity`: O(n)
+
+
+
+## Problem 3: Finding Duplicates in a string using Bitwise Operations
+
+#### Pseudocode: solution
+```pseudo
+INPUT: finding
+OUTPUT: i duplicated
+        n duplicated
+        
+find_duplicates_bitwise(char A[])
+    long int H = 0, x = 0
+    for(i = 0; A[i] != '\0'; i++){
+        x = 1
+        x = x << A[i] - 97
+        if ((x & H) > 0)
+            print("%c duplicated, A[i])
+        else 
+            H = x | H
+```
+###`Analysis: Time-Complexity`: O(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Insertion Sort
