@@ -10,17 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="427ce7ae-f51e-4db0-9ac2-af9b08c9698c" name="Default Changelist" comment="update README.md file">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DataStructure-Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataStructure-Algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Array ADT/array_ADT.c" beforeDir="false" afterPath="$PROJECT_DIR$/Array ADT/array_ADT.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Challenge/FindMinMax.c" beforeDir="false" afterPath="$PROJECT_DIR$/Challenge/FindMinMax.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Challenge/findPairsOfSum_Sorted.c" beforeDir="false" afterPath="$PROJECT_DIR$/Challenge/findPairsOfSum_Sorted.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Challenge/multiple_missing_element.c" beforeDir="false" afterPath="$PROJECT_DIR$/Challenge/multiple_missing_element.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Challenge/tempCodeRunnerFile.c" beforeDir="false" afterPath="$PROJECT_DIR$/Challenge/tempCodeRunnerFile.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recurrsion/power_recursion.c" beforeDir="false" afterPath="$PROJECT_DIR$/Recurrsion/power_recursion.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +29,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -54,6 +45,9 @@
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Unnamed" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="true" PASS_PARENT_ENVS_2="true" RUN_PATH="C:/MinGW/bin/mingw32-gcc.exe" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2" />
     </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="true" PASS_PARENT_ENVS_2="true" RUN_PATH="C:/MinGW/bin/mingw32-gcc-9.2.0.exe" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
@@ -79,6 +73,8 @@
       <workItem from="1608390811150" duration="1060000" />
       <workItem from="1608391884645" duration="328000" />
       <workItem from="1608392222442" duration="838000" />
+      <workItem from="1608430631478" duration="180000" />
+      <workItem from="1608430831592" duration="204000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md file">
       <created>1608138933540</created>
