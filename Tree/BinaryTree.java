@@ -118,6 +118,24 @@ public class BinaryTree {
     }
 
 
+    private int count_leafNode(Node node){
+        int x, y;
+        if (node != null){
+            x = count_leafNode(node.left);
+            y = count_leafNode(node.right);
+            if (node.left == null && node.right == null){
+                return x + y + 1;
+            }else{
+                return x + y;
+            }
+        }
+        return 0;
+    }
+
+
+
+
+
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
         tree.root = new Node(1);
@@ -139,8 +157,7 @@ public class BinaryTree {
         System.out.println("Count: " + tree.count_who_have_both_children(tree.root) + " Nodes");
         System.out.println("Sum: " + tree.sum_tree_data(tree.root));
         System.out.println("Height: " + tree.treeHeight(tree.root));
-
-
+        System.out.println("Count: ", +  tree.count_leafNode(tree.root));
 
     }
 
